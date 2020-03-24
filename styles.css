@@ -1,0 +1,68 @@
+@import "https://fonts.googleapis.com/css?family=Rubik&display=swap"
+*   
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Rubik',sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content:  center;
+    align-self: center;
+    min-height: 100vh;
+    background:black;
+}
+.container
+{
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-rows: minmax(100px, auto); 
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+.container .box
+{
+  color: #929796;
+  background: #333;
+  padding: 40px;
+  display: dense;
+  place-items: centre;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.5s;
+}
+.container .box:hover
+{
+  background: rgb(32, 217, 250);
+}
+.container .box img
+{
+  position: relative;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.container .box:nth-child(1)
+{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.container .box:nth-child(2)
+{
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.container .box:nth-child(4)
+{
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.container .box:nth-child(7)
+{
+  grid-column: span 3;
+  grid-row: span 1;
+}
